@@ -4,10 +4,7 @@ Created on Wed Jul 29 11:41:46 2020
 
 @author: appedu
 """
-
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
-x,y,z = mc.player.getTilePos()
+c,y,z = mc.player.getTilePos()
 while True:
     hits = mc.events.pollProjectileHits()
     if len(hits)>0:
